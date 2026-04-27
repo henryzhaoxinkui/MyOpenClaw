@@ -1,0 +1,117 @@
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# AutoClaw specific
+# 不要提交敏感配置和缓存
+.openclaw/cache/
+.openclaw/logs/
+.openclaw/sessions/
+.opencode/cache/
+.opencode/logs/
+.opencode/sessions/
+
+# 不要提交下载的临时文件
+*.zip
+*.tar.gz
+*.tgz
+
+# 不要提交个人认证文件
+registration_response.json
+skill_download_response.json
+
+# 不要提交技能包（从技能平台下载）
+skills/*.zip
+
+# 但需要保留技能目录结构（空目录占位文件）
+!skills/.gitkeep
+
+# 报告目录 - 只保留目录结构，不提交具体报告文件
+reports/*.md
+reports/*.txt
+reports/*.json
+reports/*.csv
+reports/*.xlsx
+
+# 但需要保留目录结构
+!reports/.gitkeep
+!reports/daily/.gitkeep
+!reports/tasks/.gitkeep
+!reports/boss/.gitkeep
+!reports/trends/.gitkeep
+!reports/memory/.gitkeep
+
+# Memory目录 - 不提交具体记忆文件（包含个人信息）
+memory/*.md
+memory/*.json
+
+# 但需要保留目录结构
+!memory/.gitkeep
+
+# 进化草案 - 已批准的可以提交，待处理的不要提交
+evolution-drafts/pending/
+!evolution-drafts/approved/
+
+# 配置文件 - 需要提交，但不包含敏感信息
+# config/ 目录下的文件需要谨慎处理
+config/*.secret
+config/*.private
+config/*.local

@@ -1,0 +1,137 @@
+{
+  "cron_jobs": [
+    {
+      "name": "每日主动思考报告",
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 7 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "description": "每天早上 7:30 执行，生成主动思考报告，包含龙哥动向预测和主动建议",
+      "payload_type": "agentTurn",
+      "session_target": "isolated",
+      "delivery": {
+        "mode": "none"
+      }
+    },
+    {
+      "name": "政策日报",
+      "schedule": {
+        "kind": "cron",
+        "expr": "20 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "description": "每天早上 9:20 执行，生成 24 小时政策热点新闻 + 解读",
+      "payload_type": "agentTurn",
+      "session_target": "isolated",
+      "delivery": {
+        "mode": "none"
+      }
+    },
+    {
+      "name": "国际形势日报",
+      "schedule": {
+        "kind": "cron",
+        "expr": "25 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "description": "每天早上 9:25 执行，生成 24 小时国际形势 + 解读",
+      "payload_type": "agentTurn",
+      "session_target": "isolated",
+      "delivery": {
+        "mode": "none"
+      }
+    },
+    {
+      "name": "软硬件日报",
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "description": "每天早上 9:30 执行，生成 24 小时软硬件热点 + 解读，重点关注迷你主机和家用 NAS",
+      "payload_type": "agentTurn",
+      "session_target": "isolated",
+      "delivery": {
+        "mode": "none"
+      }
+    },
+    {
+      "name": "银行零售日报",
+      "schedule": {
+        "kind": "cron",
+        "expr": "45 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "description": "每天早上 9:45 执行，生成零售获客/财富管理/生态同业 + 解读",
+      "payload_type": "agentTurn",
+      "session_target": "isolated",
+      "delivery": {
+        "mode": "none"
+      }
+    },
+    {
+      "name": "AI 日报",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "description": "每天早上 10:00 执行，生成大模型/智能体/产品发布/投资并购 + 解读",
+      "payload_type": "agentTurn",
+      "session_target": "isolated",
+      "delivery": {
+        "mode": "none"
+      }
+    },
+    {
+      "name": "股市日报",
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 15 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "description": "每天下午 15:30 执行，生成 A 股走势总结 + 下一交易日预测",
+      "payload_type": "agentTurn",
+      "session_target": "isolated",
+      "delivery": {
+        "mode": "none"
+      }
+    },
+    {
+      "name": "投资日报",
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 17 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "description": "每天下午 17:30 执行，生成国内投资领域当日情况 + 下一交易日关注重点",
+      "payload_type": "agentTurn",
+      "session_target": "isolated",
+      "delivery": {
+        "mode": "none"
+      }
+    },
+    {
+      "name": "每日知识提取",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 20 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "description": "每天晚上 20:00 执行，生成知识提取和认知更新摘要",
+      "payload_type": "agentTurn",
+      "session_target": "isolated",
+      "delivery": {
+        "mode": "none"
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-04-30T20:04:00+08:00",
+    "version": "1.0.0",
+    "timezone": "Asia/Shanghai",
+    "total_jobs": 9,
+    "enabled_jobs": 9
+  }
+}
